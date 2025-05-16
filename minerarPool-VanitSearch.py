@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 # Definir variáveis de configuração via argumentos de linha de comando
 parser = ArgumentParser(description="Script para processar blocos de dados relacionados ao Bitcoin.")
-parser.add_argument("--pool-token", default=os.getenv("POOL_TOKEN"), required=False, help="8ce1e93decc9309baf2e52edfb97ac618a31629436d4b2a0d3bf25969384b28c")
+parser.add_argument("--pool-token", default=os.getenv("8ce1e93decc9309baf2e52edfb97ac618a31629436d4b2a0d3bf25969384b28c"), required=False, help="Token de autenticação da pool.")
 parser.add_argument("--base-url", default="https://bitcoinpuzzles.io/api/block", help="URL base da API.")
 parser.add_argument("--interval", type=int, default=0, help="Intervalo de espera entre requisições (em segundos).")
 args = parser.parse_args()
