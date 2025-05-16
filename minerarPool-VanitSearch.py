@@ -76,7 +76,7 @@ def executar_script(data):
         './vanitysearch',
         '-t', '0',
         '-gpu',
-        '-gpuId', '1',
+        '-gpuId', '0',
         '-g', '1792',
         '-o', 'Found.txt',
         '--keyspace', f"{start}:{end}",  # Passa o intervalo sem '0x'
